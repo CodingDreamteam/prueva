@@ -94,9 +94,9 @@ public class  CloginController  extends SelectorComposer<Component>  {
 				
 				String patch = Sessions.getCurrent().getWebApp().getRealPath(SystemConstans._WEB_INF_DIR) + File.separator+ SystemConstans._CONFIG_DIR +File.separator;
 				if( config.LoadConfig(patch+SystemConstans._DATABASE_CONFIG_FILE,controllogger, controllanguaje)){
-	 //
-			     /*   if(ConnectionDatabase.makeConnectionToDatabase(config,controllogger,controllanguaje)){//Si logra conectarse  
-					 	TBLUser operador = UserDAO.checkvalid(ConnectionDatabase, username, userpassword, controllogger, controllanguaje);
+	 
+			        if(ConnectionDatabase.makeConnectionToDatabase(config,controllogger,controllanguaje)){//Si logra conectarse  
+					 	TBLOperator operador = operatorDAO.checkvalid(ConnectionDatabase, username, userpassword, controllogger, controllanguaje);
 					 		
 					 	if(operador!=null){
 					 			
@@ -117,7 +117,7 @@ public class  CloginController  extends SelectorComposer<Component>  {
 		                String DateTime = Utilities.getDateInFormat( ConstantsCommonClasses._Global_Date_Time_Format_File_System_24, null );
 		                            
 		                //Creamos la variable del logpath
-		                String LogPath = patch + SystemConstans._LOGS_DIR + username + File.separator + DateTime + File.separator;
+		                String LogPath = patch + SystemConstans._Logs_Dir + username + File.separator + DateTime + File.separator;
 		                            
 		                //La guardamos en la sesion
 		                currentSession.setAttribute( SystemConstans._Log_Path_Session_Key, LogPath );
@@ -136,7 +136,7 @@ public class  CloginController  extends SelectorComposer<Component>  {
 		                currentSession.setAttribute( SystemConstans._Logged_Session_Loggers, loggedSessionLoggers );
 		                            
 		                //Actualizamos en bd el último inicio de sesión
-		                UserDAO.updateLastLogin( ConnectionDatabase, operador.getId(), controllogger, controllanguaje );                            
+		                operatorDAO.updateLastLogin( ConnectionDatabase, operador.getId(), controllogger, controllanguaje );                            
 		                            
 		                //Redirecionamos hacia el home.zul
 		                Executions.sendRedirect( "/views/home/home.zul" ); 
@@ -149,7 +149,7 @@ public class  CloginController  extends SelectorComposer<Component>  {
 			           
 			         Messagebox.show("Conexion fallida!.");
 			          
-			    }*/
+			    }
 		         
 		      }else{
 		    	  

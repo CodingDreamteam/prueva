@@ -10,13 +10,13 @@ public class SystemConstans {
 	public static final String _Lang_Ext= "init.lang";
 	public static final String _Common_Lang_File = "common.init.lang";
 	
-	public static final String _LOGS_DIR = "logs"+ File.separator;
+	public static final String _Logs_Dir = "logs"+ File.separator;
 	
-	public static final String _TEMP_DIR = "temp"+File.separator;
+	public static final String _Temp_Dir = "temp"+File.separator;
 	
-	public static final String _SECURITY_DIR = "security"+File.separator;
+	public static final String _Security_Dir = "security"+File.separator;
 	
-	public static final String _SYSTEM_DIR = "system"+File.separator;
+	public static final String _System_Dir = "system"+File.separator;
 	
 	public static final String _WEB_INF_DIR = "WEB-INF";
 	
@@ -24,11 +24,11 @@ public class SystemConstans {
 	
 	public static final String _DATABASE_CONFIG_FILE = "database.config.xml";
 	
-	public static final String _DB_Con_Pro_File = "database.production.config.xml";
+	public static final String _Database_Config_Production_File = "database.production.config.xml";
 	
-	public static final String _Logger_Conf_Name = "logger.config.xml";
+	public static final String _Logger_Config_Name = "logger.config.xml";
 	
-	public static final String _Logger_Conf_Prod= "logger.production.config.xml";
+	public static final String _Logger_Config_Production= "logger.production.config.xml";
 	
 	public static final String _Operator_Unknown = "unknown@unknown.com";
 	
