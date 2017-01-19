@@ -79,7 +79,7 @@ public class  CloginController  extends SelectorComposer<Component>  {
 		LMessage.setValue("");
 	
 	}
-
+//
 
 	@Listen("onClick=#BLogin")
     public void onClickBlogin (Event event){
