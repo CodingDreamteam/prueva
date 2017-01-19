@@ -95,7 +95,7 @@ public class  CloginController  extends SelectorComposer<Component>  {
 				String patch = Sessions.getCurrent().getWebApp().getRealPath(SystemConstans._WEB_INF_DIR) + File.separator+ SystemConstans._CONFIG_DIR +File.separator;
 				if( config.LoadConfig(patch+SystemConstans._DATABASE_CONFIG_FILE,controllogger, controllanguaje)){
 	 
-			        if(ConnectionDatabase.makeConnectionToDatabase(config,controllogger,controllanguaje)){//Si logra conectarse  
+			     /*   if(ConnectionDatabase.makeConnectionToDatabase(config,controllogger,controllanguaje)){//Si logra conectarse  
 					 	TBLUser operador = UserDAO.checkvalid(ConnectionDatabase, username, userpassword, controllogger, controllanguaje);
 					 		
 					 	if(operador!=null){
@@ -149,7 +149,7 @@ public class  CloginController  extends SelectorComposer<Component>  {
 			           
 			         Messagebox.show("Conexion fallida!.");
 			          
-			    }
+			    }*/
 		         
 		      }else{
 		    	  
