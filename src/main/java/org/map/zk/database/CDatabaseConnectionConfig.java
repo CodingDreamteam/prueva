@@ -31,7 +31,11 @@ public class CDatabaseConnectionConfig implements Serializable {
         
     }
     
-    public boolean LoadConfig (String ConfigPath, CExtendedLogger localLogger, CLanguage localLanguage) {
+    public CDatabaseConnectionConfig() {
+		
+	}
+
+	public boolean LoadConfig (String ConfigPath, CExtendedLogger localLogger, CLanguage localLanguage) {
         
         boolean bResult = false; 
         
