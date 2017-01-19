@@ -156,7 +156,7 @@ public class CDatabaseConnection implements Serializable {
         localLogger.logMessage( "1", CLanguage.translateIf( localLanguage, "Set to null connection and conection config variable" ) );
 
         bResult = true;
-    //
+    //sd
     }
     catch ( Exception Ex ) {
 
